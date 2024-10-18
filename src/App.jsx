@@ -57,36 +57,25 @@ function App() {
   // sort transactions in ascending order by amount
   const handleAscendingSort = (transactionType) => {
     if (transactionType === 'income') {
-      const _incomeData = [...incomeData]
 
-      _incomeData.sort((a, b) => a.amount - b.amount)
-
-      setIncomeData(_incomeData)
+      setIncomeData([...incomeData].sort((a, b) => a.amount - b.amount))
 
     } else if (transactionType === 'expense') {
-      const _expenseData = [...expenseData]
 
-      _expenseData.sort((a, b) => a.amount - b.amount)
-
-      setExpenseData(_expenseData)
+      setExpenseData([...expenseData].sort((a, b) => a.amount - b.amount))
     }
   }
 
   // sort transactions in descending order by amount
   const handleDescendingSort = (transactionType) => {
     if (transactionType === 'income') {
-      const _incomeData = [...incomeData]
 
-      _incomeData.sort((a, b) => b.amount - a.amount)
-
-      setIncomeData(_incomeData)
+      setIncomeData([...incomeData].sort((a, b) => b.amount - a.amount))
 
     } else if (transactionType === 'expense') {
-      const _expenseData = [...expenseData]
 
-      _expenseData.sort((a, b) => b.amount - a.amount)
+      setExpenseData([...expenseData].sort((a, b) => b.amount - a.amount))
 
-      setExpenseData(_expenseData)
     }
   }
 
