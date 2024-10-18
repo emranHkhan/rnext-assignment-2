@@ -1,10 +1,11 @@
 # 💰 Expense Tracker
 
+A modern web application for tracking personal income and expenses with an intuitive dashboard and detailed transaction management.
+
 ## 📸 Screenshots
 
-[Add your application screenshots here]
+![Expense Tracker](./src/assets/expense-tracker.PNG)
 
-A modern web application for tracking personal income and expenses with an intuitive dashboard and detailed transaction management.
 
 ## 🌟 Features
 
